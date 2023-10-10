@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Varta";
+}
+
+.nav-link {
+  margin: 15px;
+  color: #5e503f;
+  text-decoration: none;
+}
+
+.nav-link:active {
+  text-decoration: double;
+}
+
+.nav-link:visited {
+  text-decoration: dashed;
+}
