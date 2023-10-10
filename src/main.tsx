@@ -8,31 +8,56 @@ import { History } from "./components/History";
 import { Offer } from "./components/Offer";
 import { Gallery } from "./components/Gallery";
 import { Contact } from "./components/Contact";
+import { Layout } from "./components/Layout";
 
 const router = createBrowserRouter([
   {
     path: "",
-    element: <Home />,
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
   },
   {
     path: "o-fundacji",
-    element: <AboutFundation />,
+    element: (
+      <Layout>
+        <AboutFundation />
+      </Layout>
+    ),
   },
   {
     path: "historia",
-    element: <History />,
+    element: (
+      <Layout>
+        <History />
+      </Layout>
+    ),
   },
   {
     path: "oferta",
-    element: <Offer />,
+    element: (
+      <Layout>
+        <Offer />
+      </Layout>
+    ),
   },
   {
     path: "galeria",
-    element: <Gallery />,
+    element: (
+      <Layout>
+        <Gallery />
+      </Layout>
+    ),
   },
   {
     path: "kontakt",
-    element: <Contact />,
+    element: (
+      <Layout>
+        <Contact />
+      </Layout>
+    ),
   },
 ]);
 
