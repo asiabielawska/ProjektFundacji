@@ -1,3 +1,3 @@
-export const Oferta = () => {
+export const Offer = () => {
   return <div>Oferta</div>;
 };

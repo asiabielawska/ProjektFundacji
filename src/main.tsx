@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./components/Home";
-import { OFundacji } from "./components/OFundacji";
-import { Historia } from "./components/Historia";
-import { Oferta } from "./components/Oferta";
-import { Galeria } from "./components/Galeria";
-import { Kontakt } from "./components/Kontakt";
+import { AboutFundation } from "./components/AboutFundation";
+import { History } from "./components/History";
+import { Offer } from "./components/Offer";
+import { Gallery } from "./components/Gallery";
+import { Contact } from "./components/Contact";
 
 const router = createBrowserRouter([
   {
@@ -16,23 +16,23 @@ const router = createBrowserRouter([
   },
   {
     path: "o-fundacji",
-    element: <OFundacji />,
+    element: <AboutFundation />,
   },
   {
     path: "historia",
-    element: <Historia />,
+    element: <History />,
   },
   {
     path: "oferta",
-    element: <Oferta />,
+    element: <Offer />,
   },
   {
     path: "galeria",
-    element: <Galeria />,
+    element: <Gallery />,
   },
   {
     path: "kontakt",
-    element: <Kontakt />,
+    element: <Contact />,
   },
 ]);
 
