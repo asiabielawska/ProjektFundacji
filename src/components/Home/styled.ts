@@ -1,5 +1,5 @@
 import { Button, styled } from "@mui/material";
-import img from "../../assets/młynmain.jpeg";
+import img from "../../assets/młynmain2.jpg";
 
 export const BackgroundImg = styled("div")({
   backgroundImage: `url(\"${img}\")`,
