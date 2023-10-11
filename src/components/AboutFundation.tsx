@@ -1,3 +1,3 @@
 export const AboutFundation = () => {
-  return <div>O fundacji</div>;
+  return <div className="mainHeading">O Fundacji</div>;
 };

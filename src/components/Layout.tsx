@@ -17,7 +17,11 @@ export function Layout({ children }: Props) {
     <>
       <AppBar
         component={"nav"}
-        style={{ background: "none", border: "none", boxShadow: "none" }}
+        style={{
+          background: "none",
+          borderBottomColor: "#5E503F",
+          boxShadow: "none",
+        }}
       >
         <Toolbar>
           <Typography sx={{ flexGrow: 1 }}>

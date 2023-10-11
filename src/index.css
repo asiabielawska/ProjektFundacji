@@ -20,3 +20,10 @@ body {
 .nav-link:visited {
   text-decoration: dashed;
 }
+
+.mainHeading {
+  padding-top: 150px;
+  padding-left: 100px;
+  color: #5e503f;
+  font-size: 40px;
+}
