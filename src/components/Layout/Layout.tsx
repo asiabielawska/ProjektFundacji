@@ -14,6 +14,7 @@ import {
   FooterAdres,
   FacebookLink,
   FooterKrs,
+  AllLinks,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -44,11 +45,13 @@ export function Layout({ children, isMainPage }: Props) {
               onClick={() => navigate("/")}
             />
           </Typography>
-          <NavigationLink to={"/o-fundacji"}>O Fundacji</NavigationLink>
-          <NavigationLink to={"/historia"}>Historia</NavigationLink>
-          <NavigationLink to={"/oferta"}>Oferta</NavigationLink>
-          <NavigationLink to={"/galeria"}>Galeria</NavigationLink>
-          <NavigationLink to={"/kontakt"}>Kontakt</NavigationLink>
+          <AllLinks isMainPage={isMainPage}>
+            <NavigationLink to={"/o-fundacji"}>O fundacji</NavigationLink>
+            <NavigationLink to={"/historia"}>Historia</NavigationLink>
+            <NavigationLink to={"/oferta"}>Oferta</NavigationLink>
+            <NavigationLink to={"/galeria"}>Galeria</NavigationLink>
+            <NavigationLink to={"/kontakt"}>Kontakt</NavigationLink>
+          </AllLinks>
         </Toolbar>
       </AppBar>
 
