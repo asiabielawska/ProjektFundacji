@@ -20,7 +20,7 @@ export const MainHeading = styled("h1")({
 
 export const Footer = styled("footer")({
   backgroundColor: "#EAE0D5",
-  height: 105,
+  height: 135,
   paddingLeft: 20,
   position: "absolute",
   left: 0,
@@ -31,13 +31,13 @@ export const Footer = styled("footer")({
 
 export const FooterHeading = styled("div")({
   fontSize: 17,
-  paddingTop: 7,
+  paddingTop: 8,
   fontWeight: "bold",
 });
 
 export const FooterAdres = styled("div")({
   fontSize: 14,
-  paddingTop: 6,
+  paddingTop: 9,
 });
 
 export const FooterMail = styled("div")({
@@ -48,12 +48,10 @@ export const FooterPhone = styled("div")({
   fontSize: 14,
 });
 
-export const FooterK = styled("span")({
-  fontSize: 18,
+export const FooterKrs = styled("div")({
+  fontSize: 16,
   fontWeight: "bold",
-  position: "absolute",
-  left: "43%",
-  bottom: "35%",
+  paddingTop: 5,
 });
 
 export const FacebookLink = styled("a")({
