@@ -56,7 +56,7 @@ export const FooterK = styled("span")({
   bottom: "35%",
 });
 
-export const FbIcon = styled("a")({
+export const FacebookLink = styled("a")({
   position: "absolute",
   right: 30,
   bottom: 15,

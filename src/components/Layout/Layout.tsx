@@ -12,8 +12,8 @@ import {
   FooterPhone,
   Image,
   NavigationLink,
-  FbIcon,
   FooterAdres,
+  FacebookLink,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -61,12 +61,12 @@ export function Layout({ children, isMainPage }: Props) {
           <FooterMail>e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
           <FooterPhone>Telefon: 695 832 759</FooterPhone>
           <FooterK>KRS: 0000944872</FooterK>
-          <FbIcon
+          <FacebookLink
             href="https://www.facebook.com/profile.php?id=100090282412225"
             target="blank"
           >
             <FacebookIcon fontSize="large" />
-          </FbIcon>
+          </FacebookLink>
         </Footer>
       )}
     </>
