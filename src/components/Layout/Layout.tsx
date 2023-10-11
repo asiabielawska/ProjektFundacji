@@ -12,13 +12,14 @@ import {
   FooterPhone,
   Image,
   NavigationLink,
-} from "./Layout";
+} from "./styled";
 
 type Props = {
   children: React.ReactNode;
+  isMainPage?: boolean;
 };
 
-export function Layout({ children }: Props) {
+export function Layout({ children, isMainPage }: Props) {
   const navigate = useNavigate();
 
   return (
@@ -48,14 +49,16 @@ export function Layout({ children }: Props) {
         </Toolbar>
       </AppBar>
 
-      <div>{children}</div>
+      <main>{children}</main>
 
-      <Footer>
-        <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
-        <FooterMail>Adres e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
-        <FooterPhone>Telefon: 695 832 759</FooterPhone>
-        <FooterK>KRS: 0000944872</FooterK>
-      </Footer>
+      {!isMainPage && (
+        <Footer>
+          <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
+          <FooterMail>Adres e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
+          <FooterPhone>Telefon: 695 832 759</FooterPhone>
+          <FooterK>KRS: 0000944872</FooterK>
+        </Footer>
+      )}
     </>
   );
 }

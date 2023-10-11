@@ -18,7 +18,7 @@ export const MainHeading = styled("h1")({
   fontSize: 40,
 });
 
-export const Footer = styled("div")({
+export const Footer = styled("footer")({
   backgroundColor: "#EAE0D5",
   height: 100,
   paddingLeft: 20,
