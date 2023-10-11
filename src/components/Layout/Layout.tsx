@@ -7,13 +7,13 @@ import { useNavigate } from "react-router-dom";
 import {
   Footer,
   FooterHeading,
-  FooterK,
   FooterMail,
   FooterPhone,
   Image,
   NavigationLink,
   FooterAdres,
   FacebookLink,
+  FooterKrs,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -60,7 +60,7 @@ export function Layout({ children, isMainPage }: Props) {
           <FooterAdres>ul. Sienkiewicza 89, 34-300 Żywiec</FooterAdres>
           <FooterMail>e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
           <FooterPhone>Telefon: 695 832 759</FooterPhone>
-          <FooterK>KRS: 0000944872</FooterK>
+          <FooterKrs>KRS: 0000944872</FooterKrs>
           <FacebookLink
             href="https://www.facebook.com/profile.php?id=100090282412225"
             target="blank"
