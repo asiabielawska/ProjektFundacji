@@ -12,7 +12,10 @@ import {
   FooterPhone,
   Image,
   NavigationLink,
+  FooterAdres,
+  FacebookLink,
 } from "./styled";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 type Props = {
   children: React.ReactNode;
@@ -54,9 +57,16 @@ export function Layout({ children, isMainPage }: Props) {
       {!isMainPage && (
         <Footer>
           <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
-          <FooterMail>Adres e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
+          <FooterAdres>ul. Sienkiewicza 89, 34-300 Żywiec</FooterAdres>
+          <FooterMail>e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
           <FooterPhone>Telefon: 695 832 759</FooterPhone>
           <FooterK>KRS: 0000944872</FooterK>
+          <FacebookLink
+            href="https://www.facebook.com/profile.php?id=100090282412225"
+            target="blank"
+          >
+            <FacebookIcon fontSize="large" />
+          </FacebookLink>
         </Footer>
       )}
     </>
