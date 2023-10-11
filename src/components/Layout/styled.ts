@@ -5,10 +5,16 @@ export const Image = styled("img")({
   cursor: "pointer",
 });
 
+export const AllLinks = styled("div")<{ isMainPage?: boolean }>((props) => ({
+  a: {
+    color: props.isMainPage ? "white" : "#5e503f",
+  },
+}));
+
 export const NavigationLink = styled(NavLink)({
-  margin: 15,
-  color: "#5e503f",
+  margin: 25,
   textDecoration: "none",
+  fontSize: 25,
 });
 
 export const MainHeading = styled("h1")({
