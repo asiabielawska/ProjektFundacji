@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import img from "../assets/młynmain.jpeg";
+import img from "../../assets/młynmain.jpeg";
 import { useNavigate } from "react-router-dom";
 
 export const Home = () => {

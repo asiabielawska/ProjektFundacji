@@ -1,0 +1,61 @@
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import img from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
+import {
+  Footer,
+  FooterHeading,
+  FooterK,
+  FooterMail,
+  FooterPhone,
+  Image,
+  NavigationLink,
+} from "./Layout";
+
+type Props = {
+  children: React.ReactNode;
+};
+
+export function Layout({ children }: Props) {
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <AppBar
+        component={"nav"}
+        style={{
+          background: "none",
+          borderBottomColor: "#5E503F",
+          boxShadow: "none",
+        }}
+      >
+        <Toolbar>
+          <Typography sx={{ flexGrow: 1 }}>
+            <Image
+              src={img}
+              width={"80px"}
+              alt="logo"
+              onClick={() => navigate("/")}
+            />
+          </Typography>
+          <NavigationLink to={"/o-fundacji"}>O Fundacji</NavigationLink>
+          <NavigationLink to={"/historia"}>Historia</NavigationLink>
+          <NavigationLink to={"/oferta"}>Oferta</NavigationLink>
+          <NavigationLink to={"/galeria"}>Galeria</NavigationLink>
+          <NavigationLink to={"/kontakt"}>Kontakt</NavigationLink>
+        </Toolbar>
+      </AppBar>
+
+      <div>{children}</div>
+
+      <Footer>
+        <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
+        <FooterMail>Adres e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
+        <FooterPhone>Telefon: 695 832 759</FooterPhone>
+        <FooterK>KRS: 0000944872</FooterK>
+      </Footer>
+    </>
+  );
+}
