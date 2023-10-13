@@ -10,11 +10,11 @@ import {
   FooterPhone,
   Image,
   NavigationLink,
-  FooterAdres,
   FacebookLink,
   FooterKrs,
   AllLinks,
   AllNavigationBar,
+  FooterLeft,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -59,11 +59,13 @@ export function Layout({ children, isMainPage }: Props) {
 
       {!isMainPage && (
         <Footer>
-          <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
-          <FooterAdres>ul. Sienkiewicza 89, 34-300 Żywiec</FooterAdres>
-          <FooterMail>e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
-          <FooterPhone>Telefon: 695 832 759</FooterPhone>
-          <FooterKrs>KRS: 0000944872</FooterKrs>
+          <FooterLeft>
+            <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
+            <FooterMail>e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
+            <FooterPhone>Telefon: 695 832 759</FooterPhone>
+            <FooterKrs>KRS: 0000944872</FooterKrs>
+          </FooterLeft>
+
           <FacebookLink
             href="https://www.facebook.com/profile.php?id=100090282412225"
             target="blank"

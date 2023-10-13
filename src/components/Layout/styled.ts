@@ -35,24 +35,26 @@ export const MainHeading = styled("h1")({
 
 export const Footer = styled("footer")({
   backgroundColor: "#EAE0D5",
-  height: 135,
+  height: 110,
   paddingLeft: 20,
   color: "#5E503F",
+  display: "flex",
+});
+
+export const FooterLeft = styled("div")({
+  width: "95%",
 });
 
 export const FooterHeading = styled("div")({
   fontSize: 17,
   paddingTop: 8,
   fontWeight: "bold",
-});
-
-export const FooterAdres = styled("div")({
-  fontSize: 14,
-  paddingTop: 9,
+  color: "#312a21",
 });
 
 export const FooterMail = styled("div")({
   fontSize: 14,
+  paddingTop: 8,
 });
 
 export const FooterPhone = styled("div")({
@@ -67,4 +69,5 @@ export const FooterKrs = styled("div")({
 
 export const FacebookLink = styled("a")({
   color: "#5E503F",
+  paddingTop: 50,
 });
