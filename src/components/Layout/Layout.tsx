@@ -1,6 +1,5 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import img from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +14,7 @@ import {
   FacebookLink,
   FooterKrs,
   AllLinks,
+  AllNavigationBar,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -36,7 +36,7 @@ export function Layout({ children, isMainPage }: Props) {
           boxShadow: "none",
         }}
       >
-        <Toolbar>
+        <AllNavigationBar isMainPage={isMainPage}>
           <Typography sx={{ flexGrow: 1 }}>
             <Image
               src={img}
@@ -52,7 +52,7 @@ export function Layout({ children, isMainPage }: Props) {
             <NavigationLink to={"/galeria"}>Galeria</NavigationLink>
             <NavigationLink to={"/kontakt"}>Kontakt</NavigationLink>
           </AllLinks>
-        </Toolbar>
+        </AllNavigationBar>
       </AppBar>
 
       <main>{children}</main>

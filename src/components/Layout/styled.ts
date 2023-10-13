@@ -1,5 +1,13 @@
+import { Toolbar } from "@mui/material";
 import { styled } from "@mui/system";
 import { NavLink } from "react-router-dom";
+
+export const AllNavigationBar = styled(Toolbar)<{ isMainPage?: boolean }>(
+  (props) => ({
+    backgroundColor: props.isMainPage ? "none" : "white",
+    borderBottom: props.isMainPage ? "none" : "1px solid #5e503f",
+  })
+);
 
 export const Image = styled("img")({
   cursor: "pointer",
@@ -22,16 +30,13 @@ export const MainHeading = styled("h1")({
   paddingLeft: 100,
   color: "#5e503f",
   fontSize: 40,
+  margin: 0,
 });
 
 export const Footer = styled("footer")({
   backgroundColor: "#EAE0D5",
   height: 135,
   paddingLeft: 20,
-  position: "absolute",
-  left: 0,
-  right: 0,
-  bottom: 0,
   color: "#5E503F",
 });
 
@@ -61,8 +66,5 @@ export const FooterKrs = styled("div")({
 });
 
 export const FacebookLink = styled("a")({
-  position: "absolute",
-  right: 30,
-  bottom: 15,
   color: "#5E503F",
 });
