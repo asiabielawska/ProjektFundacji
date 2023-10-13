@@ -25,11 +25,12 @@ export const NavigationLink = styled(NavLink)({
   fontSize: 25,
 });
 
-export const MainHeading = styled("div")({
+export const MainHeading = styled("h1")({
   paddingTop: 130,
   paddingLeft: 100,
   color: "#5e503f",
   fontSize: 40,
+  margin: 0,
 });
 
 export const Footer = styled("footer")({
