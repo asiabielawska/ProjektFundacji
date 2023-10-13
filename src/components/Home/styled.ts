@@ -6,7 +6,6 @@ export const BackgroundImg = styled("div")({
   height: "100vh",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  opacity: 0.8,
 });
 
 export const HomeAllContent = styled("div")({
