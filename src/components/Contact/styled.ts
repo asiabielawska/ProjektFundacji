@@ -10,6 +10,7 @@ export const ContactAllText = styled("div")({
   color: "#5E503F",
   width: "40%",
   fontSize: 25,
+  flex: 2,
 });
 
 export const ContactElement = styled("div")({
@@ -21,4 +22,5 @@ export const ContactImg = styled("img")({
   width: "50%",
   height: "80%",
   borderRadius: 47,
+  flex: 1,
 });
