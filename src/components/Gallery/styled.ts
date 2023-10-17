@@ -1,6 +1,6 @@
 import { Button, ImageList, ImageListItem, styled } from "@mui/material";
 
-export const ImagesOfGalerry = styled(ImageList)({
+export const ImagesOfGallery = styled(ImageList)({
   paddingLeft: 100,
   paddingRight: 100,
   paddingBottom: 50,

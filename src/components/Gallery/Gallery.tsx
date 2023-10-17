@@ -1,15 +1,9 @@
 import { MainHeading } from "../Layout/styled";
 import ImgOfMlyn from "../../assets/młynmain.jpeg";
 import ImgOfMlyn2 from "../../assets/młynmain2.jpg";
-import {
-  ClosingButton,
-  ImageOfGallery,
-  ImagesOfGalerry,
-  ZoomedImg,
-  ZoomedImgBackground,
-  ZoomedImgContainer,
-} from "./styled";
+import { ImageOfGallery, ImagesOfGallery } from "./styled";
 import { useState } from "react";
+import { ImageAboveOthers } from "./ImageAboveOthers";
 
 const itemData = [
   { img: ImgOfMlyn, title: "mlyn", id: 1 },
@@ -21,31 +15,26 @@ const itemData = [
 ];
 
 export const Gallery = () => {
-  const [clicked, setClicked] = useState("");
+  const [selectedImage, setSelectedImage] = useState("");
 
   return (
     <>
       <MainHeading>Galeria</MainHeading>
-      <ImagesOfGalerry variant="masonry" cols={3} gap={8}>
+      <ImagesOfGallery variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageOfGallery key={item.id}>
             <img
               src={item.img}
               alt={item.title}
-              onClick={() => setClicked(item.img)}
+              onClick={() => setSelectedImage(item.img)}
             />
           </ImageOfGallery>
         ))}
-      </ImagesOfGalerry>
-      {clicked && (
-        <ZoomedImgContainer>
-          <ZoomedImgBackground></ZoomedImgBackground>
-          <ZoomedImg src={clicked}></ZoomedImg>
-          <ClosingButton variant="contained" onClick={() => setClicked("")}>
-            X
-          </ClosingButton>
-        </ZoomedImgContainer>
-      )}
+      </ImagesOfGallery>
+      <ImageAboveOthers
+        selectedImage={selectedImage}
+        setSelectedImage={setSelectedImage}
+      />
     </>
   );
 };
