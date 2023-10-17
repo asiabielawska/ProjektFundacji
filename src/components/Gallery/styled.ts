@@ -43,4 +43,7 @@ export const ClosingButton = styled(Button)({
   top: 0,
   right: 0,
   transform: "translate(-200%, 235%)",
+  ":hover": {
+    backgroundColor: "darkgray",
+  },
 });
