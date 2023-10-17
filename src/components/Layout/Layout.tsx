@@ -34,6 +34,7 @@ export function Layout({ children, isMainPage }: Props) {
           background: "none",
           borderBottomColor: "#5E503F",
           boxShadow: "none",
+          zIndex: 10,
         }}
       >
         <AllNavigationBar isMainPage={isMainPage}>

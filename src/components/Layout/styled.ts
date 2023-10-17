@@ -2,12 +2,12 @@ import { Toolbar } from "@mui/material";
 import { styled } from "@mui/system";
 import { NavLink } from "react-router-dom";
 
-export const AllNavigationBar = styled(Toolbar)<{ isMainPage?: boolean }>(
-  (props) => ({
-    backgroundColor: props.isMainPage ? "none" : "white",
-    borderBottom: props.isMainPage ? "none" : "1px solid #5e503f",
-  })
-);
+export const AllNavigationBar = styled(Toolbar, {
+  shouldForwardProp: (propName) => propName !== "isMainPage",
+})<{ isMainPage?: boolean }>((props) => ({
+  backgroundColor: props.isMainPage ? "none" : "white",
+  borderBottom: props.isMainPage ? "none" : "1px solid #5e503f",
+}));
 
 export const Image = styled("img")({
   cursor: "pointer",
