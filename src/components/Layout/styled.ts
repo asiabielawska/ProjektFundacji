@@ -1,12 +1,26 @@
-import { Toolbar } from "@mui/material";
+import { Drawer, Toolbar } from "@mui/material";
 import { styled } from "@mui/system";
 import { NavLink } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export const AllNavigationBar = styled(Toolbar, {
   shouldForwardProp: (propName) => propName !== "isMainPage",
 })<{ isMainPage?: boolean }>((props) => ({
   backgroundColor: props.isMainPage ? "none" : "white",
   borderBottom: props.isMainPage ? "none" : "1px solid #5e503f",
+}));
+
+export const NavigationMenu = styled(Drawer)({
+  a: {
+    color: "#5e503f",
+    borderBottom: "3px solid #5e503f",
+  },
+});
+
+export const MenuButton = styled(MenuIcon, {
+  shouldForwardProp: (propName) => propName !== "isMainPage",
+})<{ isMainPage?: boolean }>((props) => ({
+  color: props.isMainPage ? "white" : "#5e503f",
 }));
 
 export const Image = styled("img")({
@@ -23,23 +37,33 @@ export const NavigationLink = styled(NavLink)({
   margin: 25,
   textDecoration: "none",
   fontSize: 25,
+  ":hover": {
+    textDecoration: "underline",
+  },
 });
 
-export const MainHeading = styled("h1")({
+export const MainHeading = styled("h1")((props) => ({
   paddingTop: 130,
   paddingLeft: 100,
   color: "#5e503f",
   fontSize: 40,
   margin: 0,
-});
+  [props.theme.breakpoints.down(1003)]: {
+    paddingLeft: "5vw",
+  },
+}));
 
-export const Footer = styled("footer")({
+export const Footer = styled("footer")((props) => ({
   backgroundColor: "#EAE0D5",
   height: 110,
   paddingLeft: 20,
   color: "#5E503F",
   display: "flex",
-});
+  [props.theme.breakpoints.down(306)]: {
+    height: "100%",
+    flexDirection: "column",
+  },
+}));
 
 export const FooterLeft = styled("div")({
   width: "95%",
@@ -52,14 +76,20 @@ export const FooterHeading = styled("div")({
   color: "#312a21",
 });
 
-export const FooterMail = styled("div")({
+export const FooterMail = styled("div")((props) => ({
   fontSize: 14,
   paddingTop: 8,
-});
+  [props.theme.breakpoints.down(306)]: {
+    fontSize: 12,
+  },
+}));
 
-export const FooterPhone = styled("div")({
+export const FooterPhone = styled("div")((props) => ({
   fontSize: 14,
-});
+  [props.theme.breakpoints.down(306)]: {
+    fontSize: 12,
+  },
+}));
 
 export const FooterKrs = styled("div")({
   fontSize: 16,
@@ -67,7 +97,10 @@ export const FooterKrs = styled("div")({
   paddingTop: 5,
 });
 
-export const FacebookLink = styled("a")({
+export const FacebookLink = styled("a")((props) => ({
   color: "#5E503F",
   paddingTop: 50,
-});
+  [props.theme.breakpoints.down(306)]: {
+    paddingTop: 0,
+  },
+}));
