@@ -42,6 +42,7 @@ export const HistoryImgTwo = styled("img")({
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(130px, 0)",
+  zIndex: 1,
 });
 
 export const HistoryImgThree = styled("img")({
