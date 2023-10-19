@@ -1,17 +1,13 @@
 import IconButton from "@mui/material/IconButton/IconButton";
 import { MenuButton, NavigationLink, NavigationMenu } from "./styled";
+import React from "react";
 
-type Props = {
-  isMainPage?: boolean;
-  setOpen: (value: React.SetStateAction<boolean>) => void;
-  open: boolean;
-};
-
-export const MobileNavigationBar = ({ isMainPage, setOpen, open }: Props) => {
+export const MobileNavigationBar = () => {
+  const [open, setOpen] = React.useState(false);
   return (
     <div>
       <IconButton onClick={() => setOpen(true)}>
-        <MenuButton isMainPage={isMainPage} />
+        <MenuButton />
       </IconButton>
       <NavigationMenu open={open} onClose={() => setOpen(false)} anchor="right">
         <NavigationLink to={"/o-fundacji"} onClick={() => setOpen(false)}>

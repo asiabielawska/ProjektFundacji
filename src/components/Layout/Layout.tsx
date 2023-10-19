@@ -28,7 +28,6 @@ type Props = {
 export function Layout({ children, isMainPage }: Props) {
   const navigate = useNavigate();
   const isLargeScreen = useMediaQuery("(min-width:800px)");
-  const [open, setOpen] = React.useState(false);
 
   return (
     <>
@@ -53,11 +52,7 @@ export function Layout({ children, isMainPage }: Props) {
           {isLargeScreen ? (
             <LaptopNavigationBar isMainPage={isMainPage} />
           ) : (
-            <MobileNavigationBar
-              isMainPage={isMainPage}
-              setOpen={setOpen}
-              open={open}
-            />
+            <MobileNavigationBar />
           )}
         </AllNavigationBar>
       </AppBar>
