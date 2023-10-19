@@ -53,17 +53,17 @@ export const MainHeading = styled("h1")((props) => ({
   },
 }));
 
-export const Footer = styled("footer")((props) => ({
+export const ContentOfPage = styled("main")({
+  minHeight: "calc(100vh - 110px)",
+});
+
+export const Footer = styled("footer")({
   backgroundColor: "#EAE0D5",
   height: 110,
   paddingLeft: 20,
   color: "#5E503F",
   display: "flex",
-  [props.theme.breakpoints.down(306)]: {
-    height: "100%",
-    flexDirection: "column",
-  },
-}));
+});
 
 export const FooterLeft = styled("div")({
   width: "95%",

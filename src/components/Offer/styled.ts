@@ -24,6 +24,8 @@ export const SingleOfferOfFundation = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   width: "100vw",
+  marginLeft: 20,
+  marginRight: 20,
 });
 
 export const OfferText = styled("span")<Props>(({ side, theme }) => ({

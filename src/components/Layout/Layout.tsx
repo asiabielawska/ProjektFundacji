@@ -13,6 +13,7 @@ import {
   FooterKrs,
   AllNavigationBar,
   FooterLeft,
+  ContentOfPage,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -61,7 +62,7 @@ export function Layout({ children, isMainPage }: Props) {
         </AllNavigationBar>
       </AppBar>
 
-      <main>{children}</main>
+      <ContentOfPage>{children}</ContentOfPage>
 
       {!isMainPage && (
         <Footer>
