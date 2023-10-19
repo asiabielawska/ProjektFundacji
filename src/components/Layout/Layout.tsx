@@ -9,14 +9,16 @@ import {
   FooterMail,
   FooterPhone,
   Image,
-  NavigationLink,
   FacebookLink,
   FooterKrs,
-  AllLinks,
   AllNavigationBar,
   FooterLeft,
+  ContentOfPage,
 } from "./styled";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { LaptopNavigationBar } from "./LaptopNavigationBar";
+import { MobileNavigationBar } from "./MobileNavigationBar";
 
 type Props = {
   children: React.ReactNode;
@@ -25,6 +27,7 @@ type Props = {
 
 export function Layout({ children, isMainPage }: Props) {
   const navigate = useNavigate();
+  const isLargeScreen = useMediaQuery("(min-width:800px)");
 
   return (
     <>
@@ -46,17 +49,15 @@ export function Layout({ children, isMainPage }: Props) {
               onClick={() => navigate("/")}
             />
           </Typography>
-          <AllLinks isMainPage={isMainPage}>
-            <NavigationLink to={"/o-fundacji"}>O fundacji</NavigationLink>
-            <NavigationLink to={"/historia"}>Historia</NavigationLink>
-            <NavigationLink to={"/oferta"}>Oferta</NavigationLink>
-            <NavigationLink to={"/galeria"}>Galeria</NavigationLink>
-            <NavigationLink to={"/kontakt"}>Kontakt</NavigationLink>
-          </AllLinks>
+          {isLargeScreen ? (
+            <LaptopNavigationBar isMainPage={isMainPage} />
+          ) : (
+            <MobileNavigationBar />
+          )}
         </AllNavigationBar>
       </AppBar>
 
-      <main>{children}</main>
+      <ContentOfPage>{children}</ContentOfPage>
 
       {!isMainPage && (
         <Footer>

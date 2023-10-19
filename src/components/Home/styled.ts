@@ -8,24 +8,41 @@ export const BackgroundImg = styled("div")({
   backgroundSize: "cover",
 });
 
-export const HomeAllContent = styled("div")({
+export const HomeAllContent = styled("div")((props) => ({
   color: "white",
   paddingTop: 250,
   paddingLeft: 100,
-});
+  [props.theme.breakpoints.down(800)]: {
+    paddingTop: "20%",
+    paddingLeft: "5%",
+  },
+  [props.theme.breakpoints.down(600)]: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    paddingBottom: "5%",
+    paddingTop: 150,
+  },
+}));
 
-export const HomeHeading = styled("h1")({
+export const HomeHeading = styled("h1")((props) => ({
   fontSize: 50,
   marginBottom: 5,
-});
+  [props.theme.breakpoints.down(600)]: {
+    fontSize: 30,
+    marginBottom: 10,
+  },
+}));
 
-export const HomeText = styled("div")({
+export const HomeText = styled("div")((props) => ({
   fontSize: 30,
   marginBottom: 50,
-  width: 550,
-});
+  [props.theme.breakpoints.down(780)]: {
+    fontSize: 20,
+  },
+}));
 
-export const ButtonFindMore = styled(Button)({
+export const ButtonFindMore = styled(Button)((props) => ({
   backgroundColor: "gray",
   textTransform: "none",
   fontSize: 22,
@@ -34,4 +51,10 @@ export const ButtonFindMore = styled(Button)({
   ":hover": {
     backgroundColor: "darkgray",
   },
-});
+  [props.theme.breakpoints.down(780)]: {
+    paddingLeft: 0,
+    paddingRight: 0,
+    width: "60%",
+    fontSize: 15,
+  },
+}));
