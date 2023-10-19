@@ -7,7 +7,7 @@ export const MobileNavigationBar = () => {
   return (
     <div>
       <IconButton onClick={() => setOpen(true)}>
-        <MenuButton />
+        <MenuButton isMainPage />
       </IconButton>
       <NavigationMenu open={open} onClose={() => setOpen(false)} anchor="right">
         <NavigationLink to={"/o-fundacji"} onClick={() => setOpen(false)}>
