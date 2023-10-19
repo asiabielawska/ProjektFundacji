@@ -23,33 +23,43 @@ export const SingleOfferOfFundation = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "100vw",
-  marginLeft: 20,
-  marginRight: 20,
+  paddingLeft: "5%",
+  paddingRight: "5%",
 });
 
 export const OfferText = styled("span")<Props>(({ side, theme }) => ({
   order: side === "left" ? 0 : 1,
-  transform: side === "left" ? "translate(55px, 0)" : "translate(-130px, 0)",
   backgroundColor: "#5E503F",
   borderRadius: 47,
   color: "white",
+  width: "100vh",
   paddingBottom: 20,
   paddingTop: 20,
-  paddingRight: side === "left" ? 60 : 20,
-  paddingLeft: side === "left" ? 20 : 150,
+  paddingLeft: side === "left" ? 20 : "auto",
+  paddingRight: side === "left" ? "auto" : 20,
   fontSize: 30,
-  width: "50vw",
+  display: "flex",
+  justifyContent: side === "left" ? "left" : "right",
   [theme.breakpoints.down(850)]: {
     fontSize: 20,
   },
-  [theme.breakpoints.down(530)]: {
+  [theme.breakpoints.down(775)]: {
+    width: "50vh",
+    paddingBottom: 10,
+    paddingTop: 10,
+  },
+  [theme.breakpoints.down(540)]: {
     fontSize: 15,
+  },
+  [theme.breakpoints.down(400)]: {
+    width: "35vh",
+    fontSize: 10,
   },
 }));
 
 export const OfferImg = styled("img")<Props>(({ side, theme }) => ({
   order: side === "left" ? 1 : 0,
+  transform: side === "left" ? "translate(-35px, 0)" : "translate(35px, 0)",
   borderRadius: 47,
   zIndex: 2,
   height: "10%",
@@ -59,7 +69,7 @@ export const OfferImg = styled("img")<Props>(({ side, theme }) => ({
     height: "10%",
     width: "40%",
   },
-  [theme.breakpoints.down(600)]: {
+  [theme.breakpoints.down(775)]: {
     height: "10%",
     width: "30%",
     marginBottom: 0,
