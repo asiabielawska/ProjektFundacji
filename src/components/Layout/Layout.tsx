@@ -52,7 +52,7 @@ export function Layout({ children, isMainPage }: Props) {
           {isLargeScreen ? (
             <LaptopNavigationBar isMainPage={isMainPage} />
           ) : (
-            <MobileNavigationBar />
+            <MobileNavigationBar isMainPage={isMainPage} />
           )}
         </AllNavigationBar>
       </AppBar>
