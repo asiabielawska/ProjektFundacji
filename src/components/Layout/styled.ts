@@ -50,6 +50,7 @@ export const MainHeading = styled("h1")((props) => ({
   margin: 0,
   [props.theme.breakpoints.down(1003)]: {
     paddingLeft: "5vw",
+    paddingRight: "5vw",
   },
 }));
 
