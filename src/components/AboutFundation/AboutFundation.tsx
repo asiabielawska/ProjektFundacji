@@ -2,9 +2,11 @@ import { MainHeading } from "../Layout/styled";
 import {
   AboutFundationContainer,
   AboutFundationImg,
+  Statute,
   TextWithBackground,
 } from "./styled";
 import ImgOfMlyn from "../../assets/młynmain.jpeg";
+import StatuteOfFundation from "../../assets/StatutFundacjaMlynZyzakow.pdf";
 
 export const AboutFundation = () => {
   return (
@@ -20,6 +22,10 @@ export const AboutFundation = () => {
           aktywizatora nadającego wartość sppołecznej tkance miasta. Więcej
           informacji dotyczących celów Fundacji można znaleźć w Statucie
           Fundacji (do pobrania w udostępnionym pliku poniżej).
+          <br />
+          <Statute href={StatuteOfFundation} download>
+            Statut - Fundacja Młyn Zyzaków.pdf
+          </Statute>
         </TextWithBackground>
         <AboutFundationImg src={ImgOfMlyn}></AboutFundationImg>
       </AboutFundationContainer>

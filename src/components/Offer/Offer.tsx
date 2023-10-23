@@ -1,13 +1,18 @@
 import { MainHeading } from "../Layout/styled";
 import { SingleOffer } from "./SingleOffer";
-import { OffersContainer } from "./styled";
+import { OffersContainer, TextAboutDonation } from "./styled";
 import ImgOfMlyn from "../../assets/młynmain.jpeg";
 
 export const Offer = () => {
   return (
     <>
       <MainHeading>Oferta</MainHeading>
-      {/* <SoonOffers>Po więcej szczegółów zapraszamy juz wkrótce!</SoonOffers> */}
+      <TextAboutDonation>
+        Darowizny związane z wydarzeniami lub sesjami nie stanowią formy
+        wynagrodzenia pracowników oraz członków zarządu fundacji. Pieniądze z
+        wszelkiego rodzaju wydarzeń i sesji są przekazywane tylko i wyłącznie na
+        cele statutowe fundacji.
+      </TextAboutDonation>
       <OffersContainer>
         <SingleOffer
           side="left"

@@ -4,13 +4,18 @@ type Props = {
   side: string;
 };
 
-export const SoonOffers = styled("div")({
-  height: "100vh",
-  width: "100vw",
-  padding: 100,
-  fontSize: 40,
+export const TextAboutDonation = styled("div")((props) => ({
+  paddingLeft: 100,
+  paddingRight: 100,
+  paddingBottom: 30,
+  fontSize: 20,
   color: "#5E503F",
-});
+  textAlign: "justify",
+  [props.theme.breakpoints.down(1003)]: {
+    paddingLeft: "5vw",
+    paddingRight: "5vw",
+  },
+}));
 
 export const OffersContainer = styled("div")({
   display: "flex",
@@ -72,6 +77,5 @@ export const OfferImg = styled("img")<Props>(({ side, theme }) => ({
   [theme.breakpoints.down(775)]: {
     height: "10%",
     width: "30%",
-    marginBottom: 0,
   },
 }));

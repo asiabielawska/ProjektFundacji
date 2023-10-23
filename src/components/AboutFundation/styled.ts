@@ -36,3 +36,11 @@ export const AboutFundationImg = styled("img")((props) => ({
     marginTop: 10,
   },
 }));
+
+export const Statute = styled("a")({
+  color: "white",
+  fontSize: 18,
+  ":active": {
+    color: "white",
+  },
+});

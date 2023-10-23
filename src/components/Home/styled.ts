@@ -15,6 +15,7 @@ export const HomeAllContent = styled("div")((props) => ({
   [props.theme.breakpoints.down(800)]: {
     paddingTop: "20%",
     paddingLeft: "5%",
+    paddingRight: "5%",
   },
   [props.theme.breakpoints.down(600)]: {
     display: "flex",
