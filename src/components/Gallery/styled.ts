@@ -1,8 +1,8 @@
 import { Button, ImageList, ImageListItem, styled } from "@mui/material";
 
 export const ImagesOfGallery = styled(ImageList)((props) => ({
-  paddingLeft: 100,
-  paddingRight: 100,
+  paddingLeft: "5vw",
+  paddingRight: "5vw",
   paddingBottom: 50,
   paddingTop: 30,
   [props.theme.breakpoints.down(700)]: {

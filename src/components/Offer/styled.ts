@@ -20,8 +20,6 @@ export const TextAboutDonation = styled("div")((props) => ({
 
 export const OffersContainer = styled("div")({
   display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
   flexDirection: "column",
   marginBottom: 60,
 });
@@ -30,20 +28,16 @@ export const SingleOfferOfFundation = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  paddingLeft: "5%",
-  paddingRight: "5%",
+  paddingLeft: "5vw",
+  paddingRight: "5vw",
 });
 
 export const OfferText = styled("span")<Props>(({ side, theme }) => ({
   order: side === "left" ? 0 : 1,
   borderBottom: "1px solid #5E503F",
-  borderRadius: 47,
   color: "#5E503F",
-  width: "100vh",
-  paddingBottom: 20,
-  paddingTop: 20,
+  width: "100vw",
   paddingLeft: side === "left" ? 15 : "auto",
-  paddingRight: side === "left" ? "auto" : 15,
   fontSize: 30,
   display: "flex",
   justifyContent: side === "left" ? "left" : "right",
@@ -66,7 +60,6 @@ export const OfferText = styled("span")<Props>(({ side, theme }) => ({
 
 export const OfferImg = styled("img")<Props>(({ side, theme }) => ({
   order: side === "left" ? 1 : 0,
-  transform: side === "left" ? "translate(-35px, 0)" : "translate(35px, 0)",
   borderRadius: 47,
   zIndex: 2,
   height: "10%",
