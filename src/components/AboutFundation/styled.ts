@@ -10,15 +10,14 @@ export const AboutFundationContainer = styled("div")((props) => ({
 }));
 
 export const TextWithBackground = styled("span")((props) => ({
-  backgroundColor: "#5E503F",
   borderRadius: 47,
-  color: "white",
-  padding: 20,
-  transform: "translate(55px, 0)",
+  color: "#5E503F",
+  paddingLeft: 60,
+  paddingRight: 30,
+  fontSize: 20,
   width: "40%",
   textAlign: "justify",
   [props.theme.breakpoints.down(1003)]: {
-    transform: "translate(0, 0)",
     width: "95%",
   },
 }));
@@ -38,9 +37,6 @@ export const AboutFundationImg = styled("img")((props) => ({
 }));
 
 export const Statute = styled("a")({
-  color: "white",
-  fontSize: 18,
-  ":active": {
-    color: "white",
-  },
+  color: "#5E503F",
+  fontSize: 22,
 });

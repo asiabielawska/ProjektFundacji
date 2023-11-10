@@ -23,6 +23,7 @@ export const AboutFundation = () => {
           informacji dotyczących celów Fundacji można znaleźć w Statucie
           Fundacji (do pobrania w udostępnionym pliku poniżej).
           <br />
+          <br />
           <Statute href={StatuteOfFundation} download>
             Statut - Fundacja Młyn Zyzaków.pdf
           </Statute>
