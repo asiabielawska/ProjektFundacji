@@ -5,15 +5,16 @@ type Props = {
 };
 
 export const TextAboutDonation = styled("div")((props) => ({
-  paddingLeft: 100,
+  paddingLeft: "5vw",
   paddingRight: 100,
   paddingBottom: 30,
+  paddingTop: 15,
   fontSize: 20,
   color: "#5E503F",
   textAlign: "justify",
   [props.theme.breakpoints.down(1003)]: {
-    paddingLeft: "5vw",
     paddingRight: "5vw",
+    fontSize: 15,
   },
 }));
 
@@ -22,6 +23,7 @@ export const OffersContainer = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
+  marginBottom: 60,
 });
 
 export const SingleOfferOfFundation = styled("div")({
@@ -34,14 +36,14 @@ export const SingleOfferOfFundation = styled("div")({
 
 export const OfferText = styled("span")<Props>(({ side, theme }) => ({
   order: side === "left" ? 0 : 1,
-  border: "1px solid #5E503F",
+  borderBottom: "1px solid #5E503F",
   borderRadius: 47,
   color: "#5E503F",
   width: "100vh",
   paddingBottom: 20,
   paddingTop: 20,
-  paddingLeft: side === "left" ? 20 : "auto",
-  paddingRight: side === "left" ? "auto" : 20,
+  paddingLeft: side === "left" ? 15 : "auto",
+  paddingRight: side === "left" ? "auto" : 15,
   fontSize: 30,
   display: "flex",
   justifyContent: side === "left" ? "left" : "right",
@@ -69,7 +71,6 @@ export const OfferImg = styled("img")<Props>(({ side, theme }) => ({
   zIndex: 2,
   height: "10%",
   width: "30%",
-  marginBottom: 30,
   [theme.breakpoints.down(850)]: {
     height: "10%",
     width: "40%",

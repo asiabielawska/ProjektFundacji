@@ -3,12 +3,11 @@ import { styled } from "@mui/material";
 export const HistoryContainer = styled("div")((props) => ({
   display: "flex",
   alignItems: "center",
-  paddingLeft: 100,
+  paddingLeft: "5vw",
+  paddingRight: "5vw",
   marginBottom: 20,
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
-    paddingLeft: "5%",
-    paddingRight: "5%",
   },
 }));
 
