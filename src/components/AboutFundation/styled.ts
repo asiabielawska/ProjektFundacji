@@ -4,6 +4,7 @@ export const AboutFundationContainer = styled("div")((props) => ({
   display: "flex",
   alignItems: "center",
   padding: "5vh",
+  paddingBottom: "10vh",
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
   },
@@ -12,13 +13,15 @@ export const AboutFundationContainer = styled("div")((props) => ({
 export const TextWithBackground = styled("span")((props) => ({
   borderRadius: 47,
   color: "#5E503F",
-  paddingLeft: 60,
+  paddingLeft: 70,
   paddingRight: 30,
   fontSize: 20,
   width: "40%",
   textAlign: "justify",
   [props.theme.breakpoints.down(1003)]: {
     width: "95%",
+    paddingLeft: 25,
+    fontSize: 15,
   },
 }));
 

@@ -4,6 +4,7 @@ export const ImagesOfGallery = styled(ImageList)((props) => ({
   paddingLeft: 100,
   paddingRight: 100,
   paddingBottom: 50,
+  paddingTop: 30,
   [props.theme.breakpoints.down(700)]: {
     display: "flex",
     flexDirection: "column",

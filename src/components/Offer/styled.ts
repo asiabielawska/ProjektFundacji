@@ -34,9 +34,9 @@ export const SingleOfferOfFundation = styled("div")({
 
 export const OfferText = styled("span")<Props>(({ side, theme }) => ({
   order: side === "left" ? 0 : 1,
-  backgroundColor: "#5E503F",
+  border: "1px solid #5E503F",
   borderRadius: 47,
-  color: "white",
+  color: "#5E503F",
   width: "100vh",
   paddingBottom: 20,
   paddingTop: 20,
