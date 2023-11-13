@@ -19,7 +19,7 @@ export const AboutFundation = () => {
           województwie Śląskim. Głównym celem Fundacji jest zachowanie Młyna
           Zyzaków jako miejsca historycznego i nadanie mu nowej funkcji,
           osobliwości we współczesnym świecie oraz uczynienie z niego formy
-          aktywizatora nadającego wartość sppołecznej tkance miasta. Więcej
+          aktywizatora nadającego wartość społecznej tkance miasta. Więcej
           informacji dotyczących celów Fundacji można znaleźć w Statucie
           Fundacji (do pobrania w udostępnionym pliku poniżej).
           <br />

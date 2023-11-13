@@ -4,10 +4,10 @@ type Props = {
   side: string;
 };
 
-export const TextAboutDonation = styled("div")((props) => ({
+export const TextAboutOffer = styled("div")((props) => ({
   paddingLeft: "5vw",
   paddingRight: 100,
-  paddingBottom: 30,
+  paddingBottom: 90,
   paddingTop: 15,
   fontSize: 20,
   color: "#5E503F",
