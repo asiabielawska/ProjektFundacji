@@ -24,7 +24,7 @@ export const Offer = () => {
         ></SingleOffer>
         <SingleOffer
           side="left"
-          offerText="Warsztaty"
+          offerText="Organizacja warsztatów"
           offerImage={ImgOfMlyn}
         ></SingleOffer>
         <SingleOffer

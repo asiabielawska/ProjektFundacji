@@ -6,6 +6,7 @@ export const HistoryContainer = styled("div")((props) => ({
   paddingLeft: "5vw",
   paddingRight: "5vw",
   marginBottom: 20,
+  justifyContent: "space-around",
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
   },
@@ -13,7 +14,7 @@ export const HistoryContainer = styled("div")((props) => ({
 
 export const HistoryTextContainer = styled("div")({
   color: "#5E503F",
-  flex: 1,
+  flex: 2,
 });
 
 export const SecondaryHeading = styled("h3")({
@@ -30,7 +31,6 @@ export const HistoryImgContainer = styled("div")((props) => ({
   display: "flex",
   flexDirection: "column",
   flex: 1,
-  justifyContent: "space-around",
   paddingLeft: 100,
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "row",
@@ -40,8 +40,7 @@ export const HistoryImgContainer = styled("div")((props) => ({
 }));
 
 export const HistoryImgOne = styled("img")((props) => ({
-  height: "40%",
-  width: "50%",
+  width: "55%",
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(0px, 30px)",
@@ -52,8 +51,7 @@ export const HistoryImgOne = styled("img")((props) => ({
 }));
 
 export const HistoryImgTwo = styled("img")((props) => ({
-  height: "40%",
-  width: "50%",
+  width: "55%",
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(130px, 0)",
@@ -65,8 +63,7 @@ export const HistoryImgTwo = styled("img")((props) => ({
 }));
 
 export const HistoryImgThree = styled("img")((props) => ({
-  height: "40%",
-  width: "50%",
+  width: "55%",
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(0px, -30px)",

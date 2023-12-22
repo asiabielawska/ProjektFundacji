@@ -1,19 +1,14 @@
 import { MainHeading } from "../Layout/styled";
-import {
-  AboutFundationContainer,
-  AboutFundationImg,
-  Statute,
-  TextWithBackground,
-} from "./styled";
-import ImgOfMlyn from "../../assets/młynmain.jpeg";
+import { Container, Img, Statute, Text } from "./styled";
+import Img23 from "../../assets/image00023.jpeg";
 import StatuteOfFundation from "../../assets/StatutFundacjaMlynZyzakow.pdf";
 
 export const AboutFundation = () => {
   return (
     <>
       <MainHeading>O Fundacji</MainHeading>
-      <AboutFundationContainer>
-        <TextWithBackground>
+      <Container>
+        <Text>
           Fundacja Młyn Zyzaków została założona przez Magdę Bielawską 16
           grudnia 2021 r. w Żywcu. Siedzibą Fundacji jest miejscowość Żywiec w
           województwie Śląskim. Głównym celem Fundacji jest zachowanie Młyna
@@ -27,9 +22,9 @@ export const AboutFundation = () => {
           <Statute href={StatuteOfFundation} download>
             Statut - Fundacja Młyn Zyzaków.pdf
           </Statute>
-        </TextWithBackground>
-        <AboutFundationImg src={ImgOfMlyn}></AboutFundationImg>
-      </AboutFundationContainer>
+        </Text>
+        <Img src={Img23}></Img>
+      </Container>
     </>
   );
 };

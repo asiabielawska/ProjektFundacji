@@ -9,8 +9,9 @@ import {
   HistoryTextContainer,
   SecondaryHeading,
 } from "./styled";
-import ImgOfMlynMoreColor from "../../assets/młynmain.jpeg";
-import ImgOfMlyn from "../../assets/młynmain2.jpg";
+import Img1 from "../../assets/image00001.jpeg";
+import Img3 from "../../assets/image00003.jpeg";
+import Img25 from "../../assets/image00025.jpeg";
 
 export const History = () => {
   return (
@@ -42,9 +43,9 @@ export const History = () => {
           </HistoryText>
         </HistoryTextContainer>
         <HistoryImgContainer>
-          <HistoryImgOne src={ImgOfMlyn}></HistoryImgOne>
-          <HistoryImgTwo src={ImgOfMlynMoreColor}></HistoryImgTwo>
-          <HistoryImgThree src={ImgOfMlyn}></HistoryImgThree>
+          <HistoryImgOne src={Img25}></HistoryImgOne>
+          <HistoryImgTwo src={Img1}></HistoryImgTwo>
+          <HistoryImgThree src={Img3}></HistoryImgThree>
         </HistoryImgContainer>
       </HistoryContainer>
     </>

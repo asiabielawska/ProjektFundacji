@@ -1,16 +1,17 @@
 import { styled } from "@mui/material";
 
-export const AboutFundationContainer = styled("div")((props) => ({
+export const Container = styled("div")((props) => ({
   display: "flex",
   alignItems: "center",
-  padding: "5vw",
+
   paddingBottom: "10vh",
+  justifyContent: "space-evenly",
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
   },
 }));
 
-export const TextWithBackground = styled("span")((props) => ({
+export const Text = styled("span")((props) => ({
   borderRadius: 47,
   color: "#5E503F",
   paddingRight: 40,
@@ -24,8 +25,8 @@ export const TextWithBackground = styled("span")((props) => ({
   },
 }));
 
-export const AboutFundationImg = styled("img")((props) => ({
-  width: "50%",
+export const Img = styled("img")((props) => ({
+  width: "30%",
   height: "80%",
   borderRadius: 47,
   [props.theme.breakpoints.down(1003)]: {
@@ -35,6 +36,7 @@ export const AboutFundationImg = styled("img")((props) => ({
   [props.theme.breakpoints.down(620)]: {
     width: "100%",
     marginTop: 10,
+    borderRadius: 0,
   },
 }));
 
