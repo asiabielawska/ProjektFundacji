@@ -1,6 +1,6 @@
 import { Heading } from "./styled";
 import Img4 from "../../assets/image00004.jpeg";
-import { Container, Img, AllText, Element, All } from "./styled";
+import { TextAndMap, Img, Text, SingleText, Content } from "./styled";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useMediaQuery } from "@mui/material";
@@ -11,15 +11,13 @@ export const Contact = () => {
   return (
     <>
       <Heading>Zapraszamy do kontaktu!</Heading>
-      <All>
-        <Container>
-          <AllText>
-            <Element>Adres: ul. Sienkiewicza 89, 34-300 Żywiec</Element>
-            <Element>e-mail: FundacjaMlynZyzakow@gmail.com</Element>
-            <Element>Telefon: 695 832 759</Element>
-            <br />
-            <br />
-          </AllText>
+      <Content>
+        <TextAndMap>
+          <Text>
+            <SingleText>Telefon: 695 832 759</SingleText>
+            <SingleText>e-mail: FundacjaMlynZyzakow@gmail.com</SingleText>
+            <SingleText>Adres: ul. Sienkiewicza 89, 34-300 Żywiec</SingleText>
+          </Text>
           <MapContainer
             center={position}
             zoom={13}
@@ -27,7 +25,7 @@ export const Contact = () => {
             style={
               isMapFullView
                 ? { width: "90vw", height: "50vh", zIndex: 0 }
-                : { width: "50vw", height: "50vh", zIndex: 0 }
+                : { width: "55vw", height: "50vh", zIndex: 0 }
             }
           >
             <TileLayer
@@ -36,9 +34,9 @@ export const Contact = () => {
             />
             <Marker position={position}></Marker>
           </MapContainer>
-        </Container>
+        </TextAndMap>
         <Img src={Img4}></Img>
-      </All>
+      </Content>
     </>
   );
 };
