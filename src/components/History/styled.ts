@@ -10,11 +10,10 @@ export const Container = styled("div")((props) => ({
   display: "flex",
   paddingLeft: "5vw",
   paddingRight: "5vw",
-  marginBottom: 40,
-  marginTop: 50,
+  marginBottom: 50,
+  marginTop: 40,
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
-    marginTop: 50,
   },
 }));
 
