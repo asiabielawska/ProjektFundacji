@@ -6,6 +6,9 @@ export const Container = styled("div")((props) => ({
   paddingBottom: "10vh",
   justifyContent: "space-between",
   marginTop: "20vh",
+  ["@media(orientation: landscape)"]: {
+    paddingTop: "15vh",
+  },
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
     paddingLeft: 0,
