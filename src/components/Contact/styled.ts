@@ -1,37 +1,39 @@
 import { styled } from "@mui/material";
 
-export const ContactContainer = styled("div")((props) => ({
+export const All = styled("div")((props) => ({
   display: "flex",
-  alignItems: "center",
-  padding: "0 100px 100px 100px",
+  paddingLeft: "5vw",
+  paddingRight: "5vw",
+  marginBottom: "10vh",
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
-    padding: "5%",
   },
 }));
 
-export const ContactAllText = styled("div")((props) => ({
+export const Container = styled("div")({
+  marginRight: 10,
+});
+
+export const AllText = styled("div")((props) => ({
   color: "#5E503F",
-  width: "40%",
-  fontSize: 25,
-  flex: 2,
-  [props.theme.breakpoints.down(1003)]: {
-    width: "100%",
-    marginBottom: 20,
-  },
-  [props.theme.breakpoints.down(390)]: {
-    fontSize: 17,
+  fontSize: 20,
+  [props.theme.breakpoints.down(620)]: {
+    fontSize: 15,
   },
 }));
 
-export const ContactElement = styled("div")({
+export const Element = styled("div")({
   borderBottom: "1px solid #5E503F",
   paddingTop: 30,
 });
 
-export const ContactImg = styled("img")({
-  width: "50%",
-  height: "80%",
+export const Img = styled("img")((props) => ({
+  width: "30%",
   borderRadius: 47,
   flex: 1,
-});
+  [props.theme.breakpoints.down(1003)]: {
+    width: "100%",
+    marginTop: 30,
+    borderRadius: 0,
+  },
+}));

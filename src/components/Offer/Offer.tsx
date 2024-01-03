@@ -1,43 +1,44 @@
-import { MainHeading } from "../Layout/styled";
 import { SingleOffer } from "./SingleOffer";
 import { OffersContainer, TextAboutOffer } from "./styled";
-import ImgOfMlyn from "../../assets/młynmain.jpeg";
+import Img32 from "../../assets/image00032.jpeg";
+import Img6 from "../../assets/image00006.jpeg";
+import Img28 from "../../assets/image00028.jpeg";
+import Img7 from "../../assets/image00007.jpeg";
 
 export const Offer = () => {
   return (
     <>
-      <MainHeading>Oferta</MainHeading>
-      <TextAboutOffer>
-        Wszelkie informacje dotyczące niżej wymienionych elementów oferty
-        zamieszczane będą na bieżąco na profilu Fundacji (facebook).
-      </TextAboutOffer>
       <OffersContainer>
+        <TextAboutOffer>
+          Poniżej przedstawiamy przykładowe formy współpracy mogące odbyć się na
+          terenie naszej Fundacji. W celu uzyskania większej ilości informacji
+          zapraszamy do kontaktu!
+        </TextAboutOffer>
         <SingleOffer
           side="left"
           offerText="Miejsce do sesji fotograficznych"
-          offerImage={ImgOfMlyn}
+          offerImage={Img32}
         ></SingleOffer>
         <SingleOffer
           side="right"
           offerText="Organizacja wydarzeń"
-          offerImage={ImgOfMlyn}
+          offerImage={Img6}
         ></SingleOffer>
         <SingleOffer
           side="left"
           offerText="Organizacja warsztatów"
-          offerImage={ImgOfMlyn}
+          offerImage={Img28}
         ></SingleOffer>
         <SingleOffer
           side="right"
           offerText="Wycieczki - grupowe i indywidualne"
-          offerImage={ImgOfMlyn}
+          offerImage={Img7}
         ></SingleOffer>
       </OffersContainer>
       <TextAboutOffer>
-        Darowizny związane z kadą z ofert nie stanowią formy wynagrodzenia
-        pracowników oraz członków zarządu fundacji. Pieniądze z wszelkiego
-        rodzaju wydarzeń i sesji są przekazywane tylko i wyłącznie na cele
-        statutowe fundacji.
+        Darowizny związane z każdą z ofert nie stanowią formy wynagrodzenia
+        pracowników oraz członków zarządu fundacji, są przekazywane tylko i
+        wyłącznie na cele statutowe fundacji.
       </TextAboutOffer>
     </>
   );

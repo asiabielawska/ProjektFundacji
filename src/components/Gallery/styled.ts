@@ -1,10 +1,11 @@
-import { Button, ImageList, ImageListItem, styled } from "@mui/material";
+import { ImageList, ImageListItem, styled } from "@mui/material";
 
 export const ImagesOfGallery = styled(ImageList)((props) => ({
   paddingLeft: "5vw",
   paddingRight: "5vw",
   paddingBottom: 50,
   paddingTop: 30,
+  marginTop: 100,
   [props.theme.breakpoints.down(700)]: {
     display: "flex",
     flexDirection: "column",
@@ -41,7 +42,7 @@ export const ZoomedImgBackground = styled("div")({
 });
 
 export const ZoomedImg = styled("img")((props) => ({
-  width: "48%",
+  width: "38%",
   zIndex: 100,
   [props.theme.breakpoints.down(1003)]: {
     width: "60%",
@@ -51,25 +52,25 @@ export const ZoomedImg = styled("img")((props) => ({
   },
 }));
 
-export const ClosingButton = styled(Button)((props) => ({
-  position: "absolute",
-  backgroundColor: "gray",
-  top: 0,
-  right: 0,
-  transform: "translate(-200%, 235%)",
-  ":hover": {
-    backgroundColor: "darkgray",
-  },
-  [props.theme.breakpoints.down(700)]: {
-    transform: "translate(-40%, 300%)",
-    top: 0,
-    right: 0,
-    zIndex: 111,
-  },
-  [props.theme.breakpoints.down(500)]: {
-    transform: "translate(-24%, 475%)",
-    top: 0,
-    right: 0,
-    zIndex: 111,
-  },
-}));
+// export const ClosingButton = styled(Button)((props) => ({
+//   position: "absolute",
+//   backgroundColor: "gray",
+//   top: 0,
+//   right: 0,
+//   transform: "translate(-200%, 235%)",
+//   ":hover": {
+//     backgroundColor: "darkgray",
+//   },
+//   [props.theme.breakpoints.down(700)]: {
+//     transform: "translate(-40%, 300%)",
+//     top: 0,
+//     right: 0,
+//     zIndex: 111,
+//   },
+//   [props.theme.breakpoints.down(500)]: {
+//     transform: "translate(-24%, 475%)",
+//     top: 0,
+//     right: 0,
+//     zIndex: 111,
+//   },
+// }));

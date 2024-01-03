@@ -15,7 +15,7 @@ export const MobileNavigationBar = ({ isMainPage }: Props) => {
       </IconButton>
       <NavigationMenu open={open} onClose={() => setOpen(false)} anchor="right">
         <NavigationLink to={"/o-fundacji"} onClick={() => setOpen(false)}>
-          O fundacji
+          O Fundacji
         </NavigationLink>
         <NavigationLink to={"/historia"} onClick={() => setOpen(false)}>
           Historia

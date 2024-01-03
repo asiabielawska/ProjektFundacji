@@ -1,9 +1,4 @@
-import {
-  ClosingButton,
-  ZoomedImg,
-  ZoomedImgBackground,
-  ZoomedImgContainer,
-} from "./styled";
+import { ZoomedImg, ZoomedImgBackground, ZoomedImgContainer } from "./styled";
 
 type Props = {
   selectedImage: string;
@@ -18,14 +13,10 @@ export const ImageAboveOthers = ({
     selectedImage && (
       <>
         <ZoomedImgContainer>
-          <ZoomedImgBackground></ZoomedImgBackground>
-          <ZoomedImg src={selectedImage}></ZoomedImg>
-          <ClosingButton
-            variant="contained"
+          <ZoomedImgBackground
             onClick={() => setSelectedImage("")}
-          >
-            X
-          </ClosingButton>
+          ></ZoomedImgBackground>
+          <ZoomedImg src={selectedImage}></ZoomedImg>
         </ZoomedImgContainer>
       </>
     )
