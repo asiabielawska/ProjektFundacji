@@ -1,4 +1,4 @@
-import { MainHeading } from "../Layout/styled";
+import { Heading } from "./styled";
 import Img4 from "../../assets/image00004.jpeg";
 import { Container, Img, AllText, Element, All } from "./styled";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
@@ -10,7 +10,7 @@ export const Contact = () => {
   const isMapFullView = useMediaQuery("(max-width:1003px)");
   return (
     <>
-      <MainHeading>Zapraszamy do kontaktu!</MainHeading>
+      <Heading>Zapraszamy do kontaktu!</Heading>
       <All>
         <Container>
           <AllText>

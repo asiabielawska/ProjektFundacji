@@ -42,17 +42,6 @@ export const NavigationLink = styled(NavLink)({
   },
 });
 
-export const MainHeading = styled("h1")((props) => ({
-  paddingTop: 130,
-  paddingLeft: "5vw",
-  color: "#5e503f",
-  fontSize: 40,
-  margin: 0,
-  [props.theme.breakpoints.down(1003)]: {
-    paddingRight: "5vw",
-  },
-}));
-
 export const ContentOfPage = styled("main")({
   minHeight: "calc(100vh - 110px)",
 });
