@@ -12,6 +12,9 @@ export const HomeAllContent = styled("div")((props) => ({
   color: "white",
   paddingTop: 250,
   paddingLeft: 100,
+  ["@media(orientation: landscape)"]: {
+    paddingTop: "10%",
+  },
   [props.theme.breakpoints.down(800)]: {
     paddingTop: "20%",
     paddingLeft: "5%",
