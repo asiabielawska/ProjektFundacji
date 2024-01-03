@@ -8,7 +8,7 @@ export const LaptopNavigationBar = ({ isMainPage }: Props) => {
   return (
     <div>
       <AllLinks isMainPage={isMainPage}>
-        <NavigationLink to={"/o-fundacji"}>O fundacji</NavigationLink>
+        <NavigationLink to={"/o-fundacji"}>O Fundacji</NavigationLink>
         <NavigationLink to={"/historia"}>Historia</NavigationLink>
         <NavigationLink to={"/oferta"}>Oferta</NavigationLink>
         <NavigationLink to={"/galeria"}>Galeria</NavigationLink>

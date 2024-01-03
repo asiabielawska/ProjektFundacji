@@ -1,47 +1,55 @@
 import { styled } from "@mui/material";
 
-export const HistoryContainer = styled("div")((props) => ({
+export const Heading = styled("h1")({
+  fontSize: 40,
+  color: "#5e503f",
+  paddingBottom: 30,
+});
+
+export const Container = styled("div")((props) => ({
   display: "flex",
-  alignItems: "center",
   paddingLeft: "5vw",
   paddingRight: "5vw",
-  marginBottom: 20,
+  marginBottom: 40,
+  marginTop: 50,
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
+    marginTop: 50,
   },
 }));
 
-export const HistoryTextContainer = styled("div")({
+export const TextContainer = styled("div")({
   color: "#5E503F",
-  flex: 1,
+  fontSize: 20,
+  flex: 2,
+  marginTop: 70,
 });
 
 export const SecondaryHeading = styled("h3")({
-  color: "#312a21",
+  color: "#5e503f",
 });
 
-export const HistoryText = styled("div")({
-  fontSize: 17,
+export const Text = styled("div")({
+  fontSize: 19,
   textAlign: "justify",
   paddingTop: 5,
 });
 
-export const HistoryImgContainer = styled("div")((props) => ({
+export const ImgContainer = styled("div")((props) => ({
   display: "flex",
   flexDirection: "column",
   flex: 1,
-  justifyContent: "space-around",
   paddingLeft: 100,
+  marginTop: 60,
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "row",
     paddingLeft: 0,
-    marginTop: 20,
+    justifyContent: "space-between",
   },
 }));
 
-export const HistoryImgOne = styled("img")((props) => ({
-  height: "40%",
-  width: "50%",
+export const ImgOne = styled("img")((props) => ({
+  width: "55%",
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(0px, 30px)",
@@ -49,11 +57,15 @@ export const HistoryImgOne = styled("img")((props) => ({
     transform: "translate(0px, 0px)",
     width: "30%",
   },
+  [props.theme.breakpoints.down(600)]: {
+    transform: "translate(0px, 0px)",
+    width: "30%",
+    borderRadius: 0,
+  },
 }));
 
-export const HistoryImgTwo = styled("img")((props) => ({
-  height: "40%",
-  width: "50%",
+export const ImgTwo = styled("img")((props) => ({
+  width: "55%",
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(130px, 0)",
@@ -62,16 +74,25 @@ export const HistoryImgTwo = styled("img")((props) => ({
     transform: "translate(0px, 0px)",
     width: "30%",
   },
+  [props.theme.breakpoints.down(600)]: {
+    transform: "translate(0px, 0px)",
+    width: "30%",
+    borderRadius: 0,
+  },
 }));
 
-export const HistoryImgThree = styled("img")((props) => ({
-  height: "40%",
-  width: "50%",
+export const ImgThree = styled("img")((props) => ({
+  width: "55%",
   borderRadius: 47,
   paddingBottom: 10,
   transform: "translate(0px, -30px)",
   [props.theme.breakpoints.down(1003)]: {
     transform: "translate(0px, 0px)",
     width: "30%",
+  },
+  [props.theme.breakpoints.down(600)]: {
+    transform: "translate(0px, 0px)",
+    width: "30%",
+    borderRadius: 0,
   },
 }));
