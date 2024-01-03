@@ -2,8 +2,6 @@ import { styled } from "@mui/material";
 
 export const All = styled("div")((props) => ({
   display: "flex",
-  paddingLeft: "5vw",
-  paddingRight: "5vw",
   marginBottom: "10vh",
   [props.theme.breakpoints.down(1003)]: {
     flexDirection: "column",
@@ -11,7 +9,8 @@ export const All = styled("div")((props) => ({
 }));
 
 export const Container = styled("div")({
-  marginRight: 10,
+  paddingLeft: "5vw",
+  paddingRight: "2vw",
 });
 
 export const AllText = styled("div")((props) => ({
@@ -30,6 +29,7 @@ export const Element = styled("div")({
 export const Img = styled("img")((props) => ({
   width: "30%",
   borderRadius: 47,
+  marginRight: "5vw",
   flex: 1,
   [props.theme.breakpoints.down(1003)]: {
     width: "100%",
