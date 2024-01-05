@@ -1,9 +1,9 @@
 import { SingleOffer } from "./SingleOffer";
 import { OffersContainer, TextAboutOffer } from "./styled";
-import Img32 from "../../assets/image00032.jpeg";
+import Img57 from "../../assets/img16.jpg";
 import Img6 from "../../assets/image00006.jpeg";
-import Img28 from "../../assets/image00028.jpeg";
-import Img7 from "../../assets/image00007.jpeg";
+import Img28 from "../../assets/image00008.jpeg";
+import Img51 from "../../assets/img10.jpg";
 
 export const Offer = () => {
   return (
@@ -17,7 +17,7 @@ export const Offer = () => {
         <SingleOffer
           side="left"
           offerText="Miejsce do sesji fotograficznych"
-          offerImage={Img32}
+          offerImage={Img57}
         ></SingleOffer>
         <SingleOffer
           side="right"
@@ -32,7 +32,7 @@ export const Offer = () => {
         <SingleOffer
           side="right"
           offerText="Wycieczki - grupowe i indywidualne"
-          offerImage={Img7}
+          offerImage={Img51}
         ></SingleOffer>
       </OffersContainer>
       <TextAboutOffer>

@@ -39,6 +39,22 @@ import Img38 from "../../assets/image00038.jpeg";
 import Img39 from "../../assets/image00039.jpeg";
 import Img40 from "../../assets/image00040.jpeg";
 import Img41 from "../../assets/image00041.jpeg";
+import Img42 from "../../assets/img1.jpg";
+import Img43 from "../../assets/img2.jpg";
+import Img44 from "../../assets/img3.jpg";
+import Img45 from "../../assets/img4.jpg";
+import Img46 from "../../assets/img5.jpg";
+import Img47 from "../../assets/img6.jpg";
+import Img48 from "../../assets/img7.jpg";
+import Img49 from "../../assets/img8.jpg";
+import Img50 from "../../assets/img9.jpg";
+import Img51 from "../../assets/img10.jpg";
+import Img52 from "../../assets/img11.jpg";
+import Img53 from "../../assets/img12.jpg";
+import Img54 from "../../assets/img13.jpg";
+import Img55 from "../../assets/img14.jpg";
+import Img56 from "../../assets/img15.jpg";
+import Img57 from "../../assets/img16.jpg";
 
 export const itemData = [
   { img: Img1, title: "mlyn", id: 1 },
@@ -82,4 +98,20 @@ export const itemData = [
   { img: Img39, title: "mlyn", id: 39 },
   { img: Img40, title: "mlyn", id: 40 },
   { img: Img41, title: "mlyn", id: 41 },
+  { img: Img42, title: "mlyn", id: 42 },
+  { img: Img43, title: "mlyn", id: 43 },
+  { img: Img44, title: "mlyn", id: 44 },
+  { img: Img45, title: "mlyn", id: 45 },
+  { img: Img46, title: "mlyn", id: 46 },
+  { img: Img47, title: "mlyn", id: 47 },
+  { img: Img48, title: "mlyn", id: 48 },
+  { img: Img49, title: "mlyn", id: 49 },
+  { img: Img50, title: "mlyn", id: 50 },
+  { img: Img51, title: "mlyn", id: 51 },
+  { img: Img52, title: "mlyn", id: 52 },
+  { img: Img53, title: "mlyn", id: 53 },
+  { img: Img54, title: "mlyn", id: 54 },
+  { img: Img55, title: "mlyn", id: 55 },
+  { img: Img56, title: "mlyn", id: 56 },
+  { img: Img57, title: "mlyn", id: 57 },
 ];

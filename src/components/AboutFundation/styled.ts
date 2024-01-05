@@ -5,7 +5,7 @@ export const Container = styled("div")((props) => ({
   alignItems: "center",
   paddingBottom: "10vh",
   justifyContent: "space-between",
-  marginTop: "20vh",
+  marginTop: "10vh",
   ["@media(orientation: landscape)"]: {
     paddingTop: "15vh",
   },
