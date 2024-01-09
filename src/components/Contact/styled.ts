@@ -53,8 +53,11 @@ export const Img = styled("img")((props) => ({
   width: "30%",
   marginRight: "5vw",
   flex: 1,
+  objectFit: "cover",
   [props.theme.breakpoints.down(1003)]: {
     width: "100%",
     marginTop: 30,
+    maxHeight: 350,
+    objectFit: "cover",
   },
 }));

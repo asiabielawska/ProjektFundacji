@@ -26,14 +26,10 @@ import Img25 from "../../assets/image00025.jpeg";
 import Img26 from "../../assets/image00026.jpeg";
 import Img27 from "../../assets/image00027.jpeg";
 import Img28 from "../../assets/image00028.jpeg";
-import Img29 from "../../assets/image00029.jpeg";
 import Img30 from "../../assets/image00030.jpeg";
-import Img31 from "../../assets/image00031.jpeg";
 import Img32 from "../../assets/image00032.jpeg";
-import Img33 from "../../assets/image00033.jpeg";
 import Img34 from "../../assets/image00034.jpeg";
 import Img35 from "../../assets/image00035.jpeg";
-import Img36 from "../../assets/image00036.jpeg";
 import Img37 from "../../assets/image00037.jpeg";
 import Img38 from "../../assets/image00038.jpeg";
 import Img39 from "../../assets/image00039.jpeg";
@@ -58,7 +54,7 @@ import Img57 from "../../assets/img16.jpg";
 
 export const itemData = [
   { img: Img1, title: "mlyn", id: 1 },
-  { img: Img18, title: "mlyn", id: 18 },
+  { img: Img20, title: "mlyn", id: 20 },
   { img: Img2, title: "mlyn", id: 2 },
   { img: Img3, title: "mlyn", id: 3 },
   { img: Img13, title: "mlyn", id: 13 },
@@ -75,31 +71,28 @@ export const itemData = [
   { img: Img14, title: "mlyn", id: 14 },
   { img: Img15, title: "mlyn", id: 15 },
   { img: Img16, title: "mlyn", id: 16 },
-  { img: Img17, title: "mlyn", id: 17 },
+  { img: Img57, title: "mlyn", id: 57 },
+  { img: Img23, title: "mlyn", id: 23 },
   { img: Img19, title: "mlyn", id: 19 },
-  { img: Img20, title: "mlyn", id: 20 },
+  { img: Img18, title: "mlyn", id: 18 },
   { img: Img21, title: "mlyn", id: 21 },
   { img: Img22, title: "mlyn", id: 22 },
-  { img: Img23, title: "mlyn", id: 23 },
+  { img: Img17, title: "mlyn", id: 17 },
   { img: Img24, title: "mlyn", id: 24 },
   { img: Img25, title: "mlyn", id: 25 },
   { img: Img26, title: "mlyn", id: 26 },
   { img: Img27, title: "mlyn", id: 27 },
   { img: Img28, title: "mlyn", id: 28 },
-  { img: Img29, title: "mlyn", id: 29 },
   { img: Img30, title: "mlyn", id: 30 },
-  { img: Img31, title: "mlyn", id: 31 },
-  { img: Img33, title: "mlyn", id: 33 },
   { img: Img34, title: "mlyn", id: 34 },
   { img: Img35, title: "mlyn", id: 35 },
-  { img: Img36, title: "mlyn", id: 36 },
   { img: Img37, title: "mlyn", id: 37 },
   { img: Img38, title: "mlyn", id: 38 },
   { img: Img39, title: "mlyn", id: 39 },
   { img: Img40, title: "mlyn", id: 40 },
   { img: Img41, title: "mlyn", id: 41 },
-  { img: Img42, title: "mlyn", id: 42 },
   { img: Img43, title: "mlyn", id: 43 },
+  { img: Img42, title: "mlyn", id: 42 },
   { img: Img44, title: "mlyn", id: 44 },
   { img: Img45, title: "mlyn", id: 45 },
   { img: Img46, title: "mlyn", id: 46 },
@@ -113,5 +106,4 @@ export const itemData = [
   { img: Img54, title: "mlyn", id: 54 },
   { img: Img55, title: "mlyn", id: 55 },
   { img: Img56, title: "mlyn", id: 56 },
-  { img: Img57, title: "mlyn", id: 57 },
 ];
