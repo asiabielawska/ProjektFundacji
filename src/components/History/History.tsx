@@ -18,15 +18,15 @@ export const History = () => {
     <>
       <Container>
         <TextContainer>
-          <Heading>Krótka historia Młyna</Heading>
+          <Heading>Krótka historia Młyna Zyzaków</Heading>
           <SecondaryHeading>Młyn kiedyś</SecondaryHeading>
           <Text>
             Młyn z 1827 r. zlokalizowany przy ul. Sienkiewicza 89 w Żywcu został
-            wybudowany przez ks. Franciszka Augustina dla jego siostry Apolonii
-            Selarin. Po około pięćdziesięciu latach od momentu wybudowania
-            odkupiła go rodzina Zyzaków i od tamtego czasu nieprzerwanie należy
-            do siódmego już pokolenia tej rodziny. Obiekt jest nieczynny od 1998
-            r.
+            wybudowany przez księdza Franciszka Augustina dla jego siostry
+            Apolonii Selarin. Po około pięćdziesięciu latach od momentu
+            wybudowania odkupiła go rodzina Zyzaków i od tamtego czasu
+            nieprzerwanie należy do siódmego już pokolenia tej rodziny. Obiekt
+            jest nieczynny od 1998 r.
           </Text>
           <Text>
             Z zewnątrz młyn jest murowany, a od wewnątrz drewniany. Pierwotnie
@@ -39,7 +39,7 @@ export const History = () => {
           </Text>
           <SecondaryHeading>Młyn dzisiaj</SecondaryHeading>
           <Text>
-            Obecnie Młyn należy do Aleksandry Bielawskiej z rodziny Zyzaków.
+            Obecnie młyn należy do Aleksandry Bielawskiej z rodziny Zyzaków.
             Planowane jest otwarcie w nim skansenu, co umożliwi zachowanie
             dawnego klimatu i wyjątkowego wyglądu obiektu. W grudniu 2023 r.
             Młyn trafił na listę zabytków i od tego czasu znajduje się pod stałą
