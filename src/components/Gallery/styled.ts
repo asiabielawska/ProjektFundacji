@@ -51,26 +51,3 @@ export const ZoomedImg = styled("img")((props) => ({
     width: "90%",
   },
 }));
-
-// export const ClosingButton = styled(Button)((props) => ({
-//   position: "absolute",
-//   backgroundColor: "gray",
-//   top: 0,
-//   right: 0,
-//   transform: "translate(-200%, 235%)",
-//   ":hover": {
-//     backgroundColor: "darkgray",
-//   },
-//   [props.theme.breakpoints.down(700)]: {
-//     transform: "translate(-40%, 300%)",
-//     top: 0,
-//     right: 0,
-//     zIndex: 111,
-//   },
-//   [props.theme.breakpoints.down(500)]: {
-//     transform: "translate(-24%, 475%)",
-//     top: 0,
-//     right: 0,
-//     zIndex: 111,
-//   },
-// }));

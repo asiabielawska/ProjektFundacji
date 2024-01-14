@@ -87,7 +87,6 @@ export const PhotoSession = styled(PhotoCameraIcon)<Props>(
 export const Events = styled(EventIcon)<Props>(({ side, theme }) => ({
   order: side === "left" ? 1 : 0,
   zIndex: 2,
-  // color: "#A63D40",
   color: "#5E0B15",
   fontSize: 200,
   height: "10%",
@@ -116,7 +115,6 @@ export const Workshops = styled(ColorLensIcon)<Props>(({ side, theme }) => ({
 export const Trip = styled(GroupIcon)<Props>(({ side, theme }) => ({
   order: side === "left" ? 1 : 0,
   zIndex: 2,
-  // color: "#8C7A6B",
   color: "#A63D40",
   fontSize: 200,
   height: "10%",
