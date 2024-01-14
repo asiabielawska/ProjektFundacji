@@ -1,4 +1,8 @@
 import { styled } from "@mui/material";
+import ColorLensIcon from "@mui/icons-material/ColorLens";
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
+import EventIcon from "@mui/icons-material/Event";
+import GroupIcon from "@mui/icons-material/Group";
 
 type Props = {
   side: string;
@@ -65,20 +69,61 @@ export const OfferText = styled("span")<Props>(({ side, theme }) => ({
   },
 }));
 
-export const OfferImg = styled("img")<Props>(({ side, theme }) => ({
-  order: side === "left" ? 1 : 0,
-  borderRadius: 47,
-  zIndex: 2,
-  height: "10%",
-  width: "30%",
-  [theme.breakpoints.down(850)]: {
+export const PhotoSession = styled(PhotoCameraIcon)<Props>(
+  ({ side, theme }) => ({
+    order: side === "left" ? 1 : 0,
+    zIndex: 2,
+    color: "#EAE0D5",
     height: "10%",
-    width: "53%",
+    width: "20%",
+    [theme.breakpoints.down(850)]: {
+      width: "40%",
+      marginBottom: 20,
+      marginTop: 20,
+    },
+  })
+);
+
+export const Events = styled(EventIcon)<Props>(({ side, theme }) => ({
+  order: side === "left" ? 1 : 0,
+  zIndex: 2,
+  // color: "#A63D40",
+  color: "#5E0B15",
+  fontSize: 200,
+  height: "10%",
+  width: "20%",
+  [theme.breakpoints.down(850)]: {
+    width: "40%",
     marginBottom: 20,
     marginTop: 20,
   },
-  [theme.breakpoints.down(775)]: {
-    height: "10%",
-    borderRadius: 20,
+}));
+
+export const Workshops = styled(ColorLensIcon)<Props>(({ side, theme }) => ({
+  order: side === "left" ? 1 : 0,
+  zIndex: 2,
+  color: "#5E503F",
+  fontSize: 200,
+  height: "10%",
+  width: "20%",
+  [theme.breakpoints.down(850)]: {
+    width: "40%",
+    marginBottom: 20,
+    marginTop: 20,
+  },
+}));
+
+export const Trip = styled(GroupIcon)<Props>(({ side, theme }) => ({
+  order: side === "left" ? 1 : 0,
+  zIndex: 2,
+  // color: "#8C7A6B",
+  color: "#A63D40",
+  fontSize: 200,
+  height: "10%",
+  width: "20%",
+  [theme.breakpoints.down(850)]: {
+    width: "40%",
+    marginBottom: 20,
+    marginTop: 20,
   },
 }));

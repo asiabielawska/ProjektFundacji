@@ -21,25 +21,29 @@ export const History = () => {
           <Heading>Krótka historia Młyna</Heading>
           <SecondaryHeading>Młyn kiedyś</SecondaryHeading>
           <Text>
-            Młyn z 1827 r. zlokalizowany na ul. Sienkiewicza 89 w Żywcu, został
-            wybudowany przez Franciszka Augustina. Młyn od 1828 r. należy
-            nieprzerwanie do 7 pokoleń rodziny Zyzaków. Obiekt jest nieczynny od
-            1998 r.
+            Młyn z 1827 r. zlokalizowany przy ul. Sienkiewicza 89 w Żywcu został
+            wybudowany przez ks. Franciszka Augustina dla jego siostry Apolonii
+            Selarin. Po około pięćdziesięciu latach od momentu wybudowania
+            odkupiła go rodzina Zyzaków i od tamtego czasu nieprzerwanie należy
+            do siódmego już pokolenia tej rodziny. Obiekt jest nieczynny od 1998
+            r.
           </Text>
           <Text>
-            Młyn jest z zewnątrz murowany, a od wewnątrz drewniany. Z początku
-            był jedynie młynem wodnym, a od 1956 r. był już elektryczny w
-            związku z zasypaniem Młynówki, której pozostałość do dzisiaj płynie
-            przez Żywiecki Park wpadając do rzeki Soły. Młyn był pierwszym
-            budynkiem przed wejściem do centrum Żywca, gdzie ludzie z
-            okolicznych wsi przychodzili boso i oczyszczali stopy w płynącej
-            przy nim Młynówce, aby móc wejść do miasta w butach.
+            Z zewnątrz młyn jest murowany, a od wewnątrz drewniany. Pierwotnie
+            był jedynie młynem wodnym, a od 1956 r. już elektrycznym w związku z
+            zasypaniem Młynówki, której pozostałość do dzisiaj płynie przez
+            żywiecki park, wpadając do rzeki Soły. Młyn był pierwszym budynkiem
+            przed wejściem do centrum Żywca, gdzie ludzie z okolicznych wsi,
+            przychodząc boso, oczyszczali stopy w płynącej przy nim Młynówce,
+            aby móc założyć buty i wejść do miasta.
           </Text>
           <SecondaryHeading>Młyn dzisiaj</SecondaryHeading>
           <Text>
-            Obecnie Młyn należy do Aleksandry Bielawskiej, z rodziny Zyzaków.
-            Planowane jest otwarcie skansenu umożliwiającego zachowanie dawnego
-            klimatu i wyjątkowego wyglądu.
+            Obecnie Młyn należy do Aleksandry Bielawskiej z rodziny Zyzaków.
+            Planowane jest otwarcie w nim skansenu, co umożliwi zachowanie
+            dawnego klimatu i wyjątkowego wyglądu obiektu. W grudniu 2023 r.
+            Młyn trafił na listę zabytków i od tego czasu znajduje się pod stałą
+            opieką konserwatorską.
           </Text>
         </TextContainer>
         <ImgContainer>

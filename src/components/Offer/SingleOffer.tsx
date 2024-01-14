@@ -1,16 +1,16 @@
-import { OfferImg, OfferText, SingleOfferOfFundation } from "./styled";
+import { OfferText, SingleOfferOfFundation } from "./styled";
 
 type Props = {
   side: string;
   offerText: string;
-  offerImage: string;
+  OfferImage: React.ComponentType<{ side: string }>;
 };
 
-export const SingleOffer = ({ side, offerText, offerImage }: Props) => {
+export const SingleOffer = ({ side, offerText, OfferImage }: Props) => {
   return (
     <SingleOfferOfFundation>
       <OfferText side={side}>{offerText}</OfferText>
-      <OfferImg src={offerImage} side={side}></OfferImg>
+      <OfferImage side={side}></OfferImage>
     </SingleOfferOfFundation>
   );
 };
