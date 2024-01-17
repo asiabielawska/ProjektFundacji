@@ -21,17 +21,17 @@ export const History = () => {
           <Heading>Krótka historia Młyna Zyzaków</Heading>
           <SecondaryHeading>Młyn kiedyś</SecondaryHeading>
           <Text>
-            Młyn z 1827 r. zlokalizowany przy ul. Sienkiewicza 89 w Żywcu został
-            wybudowany przez księdza Franciszka Augustina dla jego siostry
-            Apolonii Selarin. Po około pięćdziesięciu latach od momentu
+            Młyn z 1827 roku zlokalizowany przy ul. Sienkiewicza 89 w Żywcu
+            został wybudowany przez księdza Franciszka Augustina dla jego
+            siostry Apolonii Selarin. Po około pięćdziesięciu latach od momentu
             wybudowania odkupiła go rodzina Zyzaków i od tamtego czasu
             nieprzerwanie należy do siódmego już pokolenia tej rodziny. Obiekt
-            jest nieczynny od 1998 r.
+            jest nieczynny od 1998 roku.
           </Text>
           <Text>
             Z zewnątrz młyn jest murowany, a od wewnątrz drewniany. Pierwotnie
-            był jedynie młynem wodnym, a od 1956 r. już elektrycznym w związku z
-            zasypaniem Młynówki, której pozostałość do dzisiaj płynie przez
+            był jedynie młynem wodnym, a od 1956 roku już elektrycznym w związku
+            z zasypaniem Młynówki, której pozostałość do dzisiaj płynie przez
             żywiecki park, wpadając do rzeki Soły. Młyn był pierwszym budynkiem
             przed wejściem do centrum Żywca, gdzie ludzie z okolicznych wsi,
             przychodząc boso, oczyszczali stopy w płynącej przy nim Młynówce,
@@ -41,9 +41,9 @@ export const History = () => {
           <Text>
             Obecnie młyn należy do Aleksandry Bielawskiej z rodziny Zyzaków.
             Planowane jest otwarcie w nim skansenu, co umożliwi zachowanie
-            dawnego klimatu i wyjątkowego wyglądu obiektu. W grudniu 2023 r.
-            Młyn trafił na listę zabytków i od tego czasu znajduje się pod stałą
-            opieką konserwatorską.
+            dawnego klimatu i wyjątkowego wyglądu obiektu. W grudniu 2023 roku
+            Młyn Zyzaków trafił na listę zabytków i od tego czasu znajduje się
+            pod stałą opieką konserwatorską.
           </Text>
         </TextContainer>
         <ImgContainer>
