@@ -4,6 +4,8 @@ import { TextAndMap, Img, Text, SingleText, Content } from "./styled";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useMediaQuery } from "@mui/material";
+import markerIconPng from "../../assets/marker.svg";
+import { Icon } from "leaflet";
 
 export const Contact = () => {
   const position = [49.69791308628224, 19.202050445650396] as [number, number];
@@ -32,7 +34,16 @@ export const Contact = () => {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={position}></Marker>
+            <Marker
+              position={position}
+              icon={
+                new Icon({
+                  iconUrl: markerIconPng,
+                  iconSize: [25, 41],
+                  iconAnchor: [12, 41],
+                })
+              }
+            ></Marker>
           </MapContainer>
         </TextAndMap>
         <Img src={Img4}></Img>
