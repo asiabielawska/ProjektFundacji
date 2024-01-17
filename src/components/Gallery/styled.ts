@@ -41,13 +41,8 @@ export const ZoomedImgBackground = styled("div")({
   opacity: 0.6,
 });
 
-export const ZoomedImg = styled("img")((props) => ({
-  width: "38%",
+export const ZoomedImg = styled("img")({
   zIndex: 100,
-  [props.theme.breakpoints.down(1003)]: {
-    width: "60%",
-  },
-  [props.theme.breakpoints.down(700)]: {
-    width: "90%",
-  },
-}));
+  maxHeight: "90vh",
+  maxWidth: "80vw",
+});
