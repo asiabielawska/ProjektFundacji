@@ -15,7 +15,7 @@ export const Home = () => {
         <HomeAllContent>
           <HomeHeading>Fundacja Młyn Zyzaków</HomeHeading>
           <HomeText>
-            Fundacja zlokalizowana w starym Młynie w Żywcu z unikatową historią.
+            Fundacja zlokalizowana w starym młynie w Żywcu z unikatową historią.
           </HomeText>
           <ButtonFindMore
             variant="contained"
