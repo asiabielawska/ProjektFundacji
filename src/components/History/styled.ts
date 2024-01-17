@@ -29,9 +29,10 @@ export const SecondaryHeading = styled("h3")({
 });
 
 export const Text = styled("div")({
-  fontSize: 19,
+  fontSize: 18,
   textAlign: "justify",
   paddingTop: 5,
+  hyphens: "auto",
 });
 
 export const ImgContainer = styled("div")((props) => ({
