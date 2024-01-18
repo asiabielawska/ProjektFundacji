@@ -35,7 +35,7 @@ export const History = () => {
             pozostałość do dzisiaj płynie przez żywiecki park, wpadając do rzeki
             Soły. Młyn był pierwszym budynkiem przed wejściem do centrum Żywca,
             gdzie ludzie z&nbsp;okolicznych wsi, przychodząc boso, oczyszczali
-            stopy w płynącej przy nim Młynówce, aby móc założyć buty
+            stopy w&nbsp;płynącej przy nim Młynówce, aby móc założyć buty
             i&nbsp;wejść do miasta.
           </Text>
           <SecondaryHeading>Młyn dzisiaj</SecondaryHeading>
