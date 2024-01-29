@@ -9,8 +9,8 @@ import {
   SecondaryHeading,
   Heading,
 } from "./styled";
-import Img1 from "../../assets/image00001.jpeg";
-import Img3 from "../../assets/image00003.jpeg";
+import Img1 from "../../assets/image00001.webp";
+import Img3 from "../../assets/image00003.webp";
 import Img25 from "../../assets/image00025.jpeg";
 
 export const History = () => {
