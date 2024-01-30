@@ -25,7 +25,6 @@ import Img24 from "../../assets/image00024.jpeg";
 import Img25 from "../../assets/image00025.jpeg";
 import Img26 from "../../assets/image00026.jpeg";
 import Img27 from "../../assets/image00027.jpeg";
-import Img28 from "../../assets/image00028.jpeg";
 import Img30 from "../../assets/image00030.jpeg";
 import Img32 from "../../assets/image00032.jpeg";
 import Img34 from "../../assets/image00034.jpeg";
@@ -82,7 +81,6 @@ export const itemData = [
   { img: Img25, title: "mlyn", id: 25 },
   { img: Img26, title: "mlyn", id: 26 },
   { img: Img27, title: "mlyn", id: 27 },
-  { img: Img28, title: "mlyn", id: 28 },
   { img: Img30, title: "mlyn", id: 30 },
   { img: Img34, title: "mlyn", id: 34 },
   { img: Img35, title: "mlyn", id: 35 },
