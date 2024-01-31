@@ -1,5 +1,5 @@
 import { Heading } from "./styled";
-import Img4 from "../../assets/img9.jpg";
+import Img4 from "../../assets/img9.webp";
 import { TextAndMap, Img, Text, SingleText, Content } from "./styled";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";

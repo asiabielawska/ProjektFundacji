@@ -34,22 +34,22 @@ import Img38 from "../../assets/image00038.jpeg";
 import Img39 from "../../assets/image00039.jpeg";
 import Img40 from "../../assets/image00040.jpeg";
 import Img41 from "../../assets/image00041.jpeg";
-import Img42 from "../../assets/img1.jpg";
-import Img43 from "../../assets/img2.jpg";
-import Img44 from "../../assets/img3.jpg";
-import Img45 from "../../assets/img4.jpg";
-import Img46 from "../../assets/img5.jpg";
-import Img47 from "../../assets/img6.jpg";
-import Img48 from "../../assets/img7.jpg";
-import Img49 from "../../assets/img8.jpg";
-import Img50 from "../../assets/img9.jpg";
-import Img51 from "../../assets/img10.jpg";
-import Img52 from "../../assets/img11.jpg";
-import Img53 from "../../assets/img12.jpg";
-import Img54 from "../../assets/img13.jpg";
-import Img55 from "../../assets/img14.jpg";
-import Img56 from "../../assets/img15.jpg";
-import Img57 from "../../assets/img16.jpg";
+import Img42 from "../../assets/img1.webp";
+import Img43 from "../../assets/img2.webp";
+import Img44 from "../../assets/img3.webp";
+import Img45 from "../../assets/img4.webp";
+import Img46 from "../../assets/img5.webp";
+import Img47 from "../../assets/img6.webp";
+import Img48 from "../../assets/img7.webp";
+import Img49 from "../../assets/img8.webp";
+import Img50 from "../../assets/img9.webp";
+import Img51 from "../../assets/img10.webp";
+import Img52 from "../../assets/img11.webp";
+import Img53 from "../../assets/img12.webp";
+import Img54 from "../../assets/img13.webp";
+import Img55 from "../../assets/img14.webp";
+import Img56 from "../../assets/img15.webp";
+import Img57 from "../../assets/img16.webp";
 
 export const itemData = [
   { img: Img1, title: "mlyn", id: 1 },
