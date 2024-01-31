@@ -8,7 +8,7 @@ export const AboutFundation = () => {
       <Container>
         <Text>
           Fundacja Młyn Zyzaków została założona przez Magdę Bielawską
-          16&nbsp;grudnia 2021&nbsp;r. w Żywcu. Siedzibą Fundacji jest
+          16&nbsp;grudnia 2021&nbsp;r. w&nbsp;Żywcu. Siedzibą Fundacji jest
           miejscowość Żywiec w&nbsp;województwie śląskim.
           <br />
           Głównym celem Fundacji jest zachowanie Młyna Zyzaków jako miejsca
