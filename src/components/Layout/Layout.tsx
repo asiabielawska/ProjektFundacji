@@ -65,7 +65,6 @@ export function Layout({ children, isMainPage }: Props) {
             <FooterHeading>Fundacja Młyn Zyzaków</FooterHeading>
             <FooterMail>e-mail: FundacjaMlynZyzakow@gmail.com</FooterMail>
             <FooterPhone>Telefon: 695 832 759</FooterPhone>
-            <FooterKrs>KRS: 0000944872</FooterKrs>
           </FooterLeft>
 
           <FacebookLink

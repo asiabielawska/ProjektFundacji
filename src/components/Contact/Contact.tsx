@@ -19,6 +19,15 @@ export const Contact = () => {
             <SingleText>Telefon: 695 832 759</SingleText>
             <SingleText>e-mail: FundacjaMlynZyzakow@gmail.com</SingleText>
             <SingleText>Adres: ul. Sienkiewicza 89, 34-300 Żywiec</SingleText>
+            <SingleText>
+              <strong>Jak przekazać 1,5% podatku?</strong>
+              <br />
+              <br />
+              Aktualnie współpracujemy z Fundacją „Młodzi-Młodym”, dlatego w
+              celu przekazania 1,5% podatku należy wpisać KRS wspomnianej
+              fundacji: 0000270261, a w celu szczegółowym należy wpisać:
+              FUNDACJA MŁYN ZYZAKÓW 14233.
+            </SingleText>
           </Text>
           <MapContainer
             center={position}
