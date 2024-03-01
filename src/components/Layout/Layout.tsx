@@ -10,7 +10,6 @@ import {
   FooterPhone,
   Image,
   FacebookLink,
-  FooterKrs,
   AllNavigationBar,
   FooterLeft,
   ContentOfPage,
